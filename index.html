@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>...JD Writes...</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body {background-color: powderblue;
+                text-align: center;
+            }
+            </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>JD's Poetry Catcher</h1>
+        </div>
+        <div id="Main">If you have an idea for a poem<br>
+            <strong>-- like a single line --</strong><br>
+            Enter the date, time, title, body, and inspiration in the fields below.<br>
+            Clicking "Submit" will send the info to a <strong>'Poem Catcher'</strong> Google Sheet.<br>
+        </div>
+
+        <img src="dancing.gif" alt="Dancing Guy">
+        <div id="Forms">
+        <form
+            method="POST"
+            action="https://script.google.com/macros/s/AKfycbx76rXj6NlOuAKrNW1Cr_dOe6Xqhhqj_6GM6OTQvhJN3kgULi_p5AiIUmXNIG7LwVsp/exec"
+        >
+        <input name="Date (mm/dd/yyyy)" type="date" placeolder="Date">
+        <br>
+        <input name="Time (12hr 00:00)" type="time" placeholder="Time">
+        <br>
+        <input name="Poem Title" type="text" placeholder="Poem Title">
+        <br>
+        <input name="Poem Text" type="text" placeholder="Poem Idea">
+        <br>
+        <input name="Inspiration" type="text" placeholder="Inspiration">
+        <br>
+        <button type="submit">Submit</button>
+        </button>
+        </form>
+    </div>
+    </body>
+    <footer>Thank you for choosing The AntiNetwork. <br>
+        --JD</footer>
+</html>
