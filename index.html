@@ -8,18 +8,23 @@
             body {background-color: powderblue;
                 text-align: center;
             }
+            #explain {
+                text-align: center;
+                border-style: double;
+                border-width: 5px;
+            }
             </style>
     </head>
     <body>
         <div id="header">
-            <h1>JD's Poetry Catcher</h1>
+            <h1>JD's Haiku Poetry Catcher</h1>
         </div>
-        <div id="Main">If you have an idea for a poem<br>
-            <strong>-- like a single line --</strong><br>
-            Enter the date, time, title, body, and inspiration in the fields below.<br>
+        <div id="Main">Take a break, traveler; rest your weary mind...<br>
+            <strong>-- Set your thoughts free here --</strong><br>
+            Enter the date, time, title, inspiration, and a Haiku poem line by line in the fields below.<br>
             Clicking "Submit" will send the info to a <strong>'Poem Catcher'</strong> Google Sheet.<br>
+            To see the poem database, <a href="https://docs.google.com/spreadsheets/d/1BBXvID4TWHvEQKoULSWM3s0ylvrPaq5uSKnnZQ1AVQ8/edit?usp=sharing">Click Here...</a>
         </div>
-
         <img src="dancing.gif" alt="Dancing Guy">
         <div id="Forms">
         <form
@@ -30,18 +35,32 @@
         <br>
         <input name="Time (12hr 00:00)" type="time" placeholder="Time">
         <br>
-        <input name="Poem Title" type="text" placeholder="Poem Title">
-        <br>
-        <input name="Poem Text" type="text" placeholder="Poem Idea">
-        <br>
         <input name="Inspiration" type="text" placeholder="Inspiration">
+        <br>
+        <input name="Haiku Title" type="text" placeholder="Haiku Title">
+        <br>
+        <input name="Line One" type="text" placeholder="Five Syllables">
+        <br>
+        <input name="Line Two" type="text" placeholder="Seven Syllables">
+        <br>
+        <input name="Line Three" type="text" placeholder="Five Syllables">
         <br>
         <button type="submit">Submit</button>
         </button>
         </form>
     </div>
+    <div id="explain">
+        <p>Just in case you need some <br>
+        <strong>help...</strong><br>
+        Haiku are poems written 5 Syllables in the first line,<br>
+        7 Syllables in the second line,<br>
+        and 5 Syllables in the third line.<br>
+        Normally about nature, observations about life, etc.
+        </p>
+    </div>
     </body>
     <footer>Thank you for choosing The AntiNetwork. <br>
         --JD
     <a href='https://www.anti-net.com'>Let's Go Home...</a></footer>
+    [working on a poetry idea generation app "The Great Juxtaposer"]
 </html>
